@@ -1,0 +1,57 @@
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  flex-shrink: 0;
+  background-color: #0A2454; /* Updated background color */
+  color: white; /* Updated text color */
+  padding: 1rem; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  font-size: 1.5rem; /* Increase font size */
+  border-bottom: 1px solid #dee2e6; /* Optional: Add a bottom border */
+}
+
+main.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #E880B3;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: pink;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
